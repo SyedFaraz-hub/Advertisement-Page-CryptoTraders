@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April Customer Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .small__info {
+            display: none !important;
+        }
+
+        .hero__image {
+            position: absolute;
+            right: 0px;
+            top: 42px;
+            max-width: 340px;
+        }
+
+        @media (max-width:575px) {
+            .small__info {
+                display: table !important;
+            }
+
+            .first__screen>img.hero__image {
+                max-width: 260px !important;
+                top: 71px;
+            }
+
+            .youtube__info {
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .youtube__info>span {
+                width: 100% !important;
+                max-width: 100% !important;
+                min-width: 0px !important;
+                display: block !important;
+                text-align: center !important;
+                margin-bottom: 25px !important;
+            }
+
+            .youtube__info>span {
+                margin-right: 0px !important;
+                margin-bottom: 20px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+
+            .youtube__info>a {
+                top: -9px !important;
+                margin-top: 20px;
+            }
+
+            .first__screen {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .first__screen>h2 {
+                font-size: 32px !important;
+                line-height: 44px !important;
+            }
+
+            .first__screen>span {
+                font-size: 22px !important;
+            }
+
+            .crypto__info {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+            }
+
+            .crypto__info>p {
+                font-size: 16px !important;
+            }
+
+            .first__screen>img {
+                max-width: 100px !important;
+                bottom: -30px !important;
+                /* right: 15px !important; */
+            }
+
+            .first__screen {
+                background-position: 0px top !important;
+            }
+
+            .dtext__info {
+                padding-left: 12px !important;
+            }
+
+            .dtext__info>p {
+                font-size: 15px !important;
+            }
+
+            .dtext__info>span {
+                font-size: 13px !important;
+            }
+
+            .big__info td img {
+                max-width: 90px !important;
+            }
+
+            .big__info {
+                display: none !important;
+            }
+        }
+
+        .small__dimage {
+            display: none !important;
+        }
+
+        @media (max-width:480px) {
+            .small__dimage {
+                display: table-cell !important;
+            }
+
+            .first__screen>img.hero__image {
+                max-width: 210px !important;
+                top: 80px !important;
+                right: 0 !important;
+            }
+
+            .questions__bottom {
+                padding-bottom: 0px !important;
+            }
+
+            .meme__info {
+                padding-top: 20px !important;
+            }
+
+
+            .first__screen {
+                background-position: -55px bottom !important;
+                background-size: cover !important;
+            }
+
+            .youtube__info>span {
+                text-align: center !important;
+                padding-left: 0px !important;
+            }
+
+            .image__exchange {
+                display: none !important;
+            }
+
+            .td__info {
+                padding-left: 0px !important;
+            }
+        }
+
+        @media (max-width:400px) {
+            .youtube__info>span {
+                font-size: 17px !important;
+            }
+
+            .first__screen>img.hero__image {
+                max-width: 160px !important;
+                top: 80px !important;
+            }
+
+            .first__screen {
+                background-position: 5px bottom !important;
+                background-size: cover !important;
+            }
+
+            .small__desc {
+                display: block !important;
+            }
+
+            .big__desc {
+                display: none !important;
+            }
+
+            .quote__buttons {
+                display: block !important;
+            }
+
+            .quote__buttons>a {
+                margin-bottom: 10px !important;
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+
+            .first__screen>img {
+                max-width: 80px !important;
+                bottom: -30px !important;
+                /* right: 15px !important; */
+            }
+
+            .first__screen {
+                padding-top: 40px !important;
+            }
+
+            .first__screen>h2 {
+                font-size: 26px !important;
+                line-height: 38px !important;
+                margin-bottom: 30px !important;
+            }
+
+            .first__screen>span {
+                font-size: 19px !important;
+            }
+
+            .meme__info {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .first__screen>img.hero__image {
+                max-width: 140px !important;
+                top: 50px !important;
+            }
+
+            .quote__buttons>a {
+                font-size: 13px !important;
+            }
+
+            .quote__buttons>a>img {
+                max-width: 18px !important;
+                top: 4px !important;
+            }
+        }
+
+        .anker-blue:hover {
+            background-color: #2786fa !important;
+        }
+        .anker-yellow:hover {
+            background-color: #e69824 !important;
+        }
+
+
+        @media (max-width: 520px) {
+        .size-change{
+            bottom: -5px !important;
+
+        }
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <!-- //Main table -->
+    <table style="max-width:640px;margin-left: auto;margin-right: auto;width: 100%;border-collapse: collapse;">
+
+
+
+        <!-- //Main Picture -->
+        <tr>
+            <td>
+                <div class="first__screen"
+                    style="position:relative;padding-top: 60px;padding-bottom: 40px;background:url('./Assets/PNG/Hero\ Background.png');background-repeat:no-repeat;background-size:contain;background-position:25px top;background-color:#142B50;padding-left: 30px;padding-right: 30px;">
+                    <img src="./Assets/PNG/Hero Illustration.png" alt="imagehero" class="hero__image">
+                    <img style="position:absolute;right: 30px;bottom:-60px;max-width:150px;"
+                        src="./Assets/PNG/Crypto_Hero_Logo.png" alt="hero">
+                    <h2
+                        style="margin:0px;margin-bottom:50px;font-size:40px;line-height: 56px;color:#fff;font-weight: bold;position: relative;">
+                        YOUR <br>
+                        MONTHLY <br>
+                        CRYPTO TAX <br>
+                        UPDATE</h2>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- //Hey crypto family paragraph -->
+        <tr>
+            <td>
+                <div class="crypto__info"
+                    style="padding-left:30px;padding-right:30px;padding-top:40px;padding-bottom:30px;">
+                    <p
+                        style="margin:0px; margin-bottom: 20px;font-size:16px;color:#000;font-weight:401;line-height: 26px;">
+                        Hey crypto family, </p>
+                    <p style="font-size:16px;color:#000;font-weight:401;line-height: 26px;">Every month, we send an
+                        email that’s designed to keep you
+                        up-to-date on crypto tax news. And because we like having fun, we
+                        also include one crypto meme that made our team laugh. So, sit
+                        back, relax, and enjoy this newsletter (and find out how you can
+                        report your ETH wallet transactions before the tax deadline!) </p>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- ETH wallet imports are here! / Login paragraph -->
+        <tr>
+            <td>
+                <div class="quote__block">
+                    <div class="head__quote" style="background-color:#F6F7F8;padding:15px 30px;">
+                        <h6 style="margin:0px;font-size:18px;font-weight: bold;color:#000;">ETH wallet imports are here!
+                        </h6>
+                    </div>
+                    <div class="quote__info" style="background-color:#F6F7F8;padding:0px 30px;padding-bottom: 30px;">
+                        <p
+                            style="margin-top: 0px;margin-bottom: 15px;font-size: 16px;font-weight: 401;color:#000;line-height: 26px;padding-bottom: 15px;">
+                            Want to report taxes on your Ethereum wallet transactions? CryptoTrader.Tax
+                            can help. Just select ʻEthereumʼ from our import options, then enter your wallet
+                            address. Weʼll pull in all your transactions directly from the blockchain. Try it
+                            out today!</p>
+                        <a href="https://app.coinledger.io/bff/login?action=signin" target="_blank" class="anker-blue"
+                            style="background-color: #539FFC;padding:10px 18px;border-radius: 5px;color:#fff;font-size:15px;font-weight: bold;text-decoration: none;">LOGIN
+                            TO THE PLATFORM</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+
+        <!-- Read the blog  Section-->
+        <tr>
+            <td style="padding-top:40px;padding-bottom: 30px;padding-left: 30px;padding-right: 30px;">
+                <table>
+                    <tr>
+                        <td style="text-align: center;padding-bottom:15px;" class="small__dimage">
+                            <img src="./Assets/PNG/Blog Illustration.png" alt="fees">
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td class="td__info">
+                            <h2 style="margin-top:0px;font-size:18px;font-weight:bold;color:#000;margin-bottom:15px">Can
+                                the IRS track your cryptocurrency?</h2>
+                            <p
+                                style="margin:0px;margin-bottom:20px;font-size: 16px;font-weight: 401; padding-right: 50px; color: #000; line-height: 26px;">
+                                Wondering how the IRS can track your crypto
+                                transactions? In the past, the agency has
+                                teamed up with contractors to analyze the
+                                blockchain and match anonymous wallets to
+                                known individuals. We dive into the details
+                                you need to know in our recent blog post.</p>
+                            <div class="read__blog">
+                                <a href="https://cryptotrader.tax/blog/can-the-irs-track-cryptocurrency" target="_blank" class="anker-yellow"
+                                    style="background-color: #eca841;padding:10px 18px;border-radius: 5px;color:#fff;font-size:15px;font-weight: bold;text-decoration: none;">READ
+                                    THE BLOG</a>
+
+                            </div>
+                        </td>
+                        <td class="image__exchange">
+                            <img src="./Assets/PNG/Blog Illustration.png" alt="fees">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- Set a remainder Section -->
+        <tr>
+            <td>
+                <div class="questions__block" style="padding-left:14px;padding-right:14px;padding-top: 30px;">
+                    <div class="questions__head" style="background-color:#E5F0FE;margin-bottom: 2px;padding:10px 15px;">
+                        <h2 style="margin:0px;font-size:18px;font-weight: bold;color:#000;">Catch our monthly
+                            livestream!
+                        </h2>
+                    </div>
+                    <div class="questions__inner" style="overflow:hidden;">
+
+                        <div class="questions__bottom"
+                            style="background-color:#E5F0FE;margin-top: 0px;padding-bottom: 15px;">
+                            <table style="padding:10px 15px;">
+                                <tr>
+                                    <td>
+                                        <p
+                                            style="margin-top: 0px;margin-bottom:15px;font-size: 16px;font-weight: 401;color:#000;line-height: 26px;">
+                                            Got crypto tax questions you want answered before Mondayʼs deadline? Join us
+                                            on Friday, April 15th, to hear our panel of tax experts answer questions
+                                            from
+                                            the audience! </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table style="width:100%;padding-bottom: 10px;" class="big__info">
+                                            <tr>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./Assets/PNG/Jordan Bass Headshot.png"
+                                                                    alt="jordan" style="width:100%;">
+                                                            </td>
+                                                            <td style="padding-left: 20px;" class="dtext__info">
+                                                                <p
+                                                                    style="margin:0px;font-size: 17px;font-weight:bold;color:#000;margin-bottom: 2px;">
+                                                                    Jordan Bass,</p>
+                                                                <span
+                                                                    style="display: inline-block;font-size: 14px;color:#000;font-weight:401;">CPA</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./Assets/PNG/Miles Brooks Headshot.png"
+                                                                    alt="jordan" style="width:100%;">
+                                                            </td>
+                                                            <td style="padding-left: 20px;" class="dtext__info">
+                                                                <p
+                                                                    style="margin:0px;font-size: 17px;font-weight:bold;color:#000;margin-bottom: 2px;">
+                                                                    Miles Brooks,</p>
+                                                                <span
+                                                                    style="display: inline-block;font-size: 14px;color:#000;font-weight:401;">CPA</span>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table style="width:100%;max-width: 360px;margin-left: auto;margin-right: auto;"
+                                            class="small__info">
+                                            <tr>
+                                                <td style="padding:0px 4px;">
+                                                    <table style="width: 100%;text-align: center;">
+                                                        <tr>
+                                                            <td>
+                                                                <table
+                                                                    style="max-width: 280px;margin-left: auto;margin-right: auto;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="./Assets/PNG/Jordan Bass Headshot.png"
+                                                                                alt="jordan" width="100%">
+                                                                        </td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="padding-left: 0px;text-align: center;padding-top: 10px;">
+                                                                            <p
+                                                                                style="margin:0px;font-size: 15px;font-weight:bold;color:#000;margin-bottom: 2px;">
+                                                                                Jordan Bass,</p>
+                                                                            <span
+                                                                                style="display: inline-block;font-size: 13px;color:#000;font-weight:401;">CPA</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                                <td style="padding:0px 4px;">
+                                                    <table style="width: 100%;">
+                                                        <tr>
+                                                            <td>
+                                                                <table
+                                                                    style="max-width: 280px;margin-left: auto;margin-right: auto;">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <img src="./Assets/PNG/Miles Brooks Headshot.png"
+                                                                                alt="jordan" width="100%">
+                                                                        </td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td
+                                                                            style="padding-left: 0px;text-align: center;padding-top: 10px;">
+                                                                            <p
+                                                                                style="margin:0px;font-size: 15px;font-weight:bold;color:#000;margin-bottom: 2px;">
+                                                                                Miles Brooks,</p>
+                                                                            <span
+                                                                                style="display: inline-block;font-size: 13px;color:#000;font-weight:401;">CPA</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="youtube__info"
+                                style="background-color:#CFE3FD;display:inline-block;padding:8px;width:520px;padding-top: 11px;padding-right: 4px;padding-bottom: 15px;padding-left: 15px;">
+                                <span
+                                    style="font-size: 19px;color:#000;font-weight: bold;max-width: 360px;text-align:left;display:inline-block;margin-right: 13px;padding-top: 0px;width:323px;">Friday,
+                                    April 15 at 10 AM PT/1 PM ET </span>
+                                <a href="#" target="_blank" class="anker-blue"
+                                    style="white-space:nowrap;background-color:#539FFC;padding:10px;border-radius: 3px;color:#fff;text-decoration: none;font-weight:bold;font-size:14px;">SET
+                                    A REMINDER <img src="./Assets/PNG/Reminder Icon.png" alt="Reminder_Icon1"
+                                        style="max-width: 20px;margin-left: 5px;position: relative;top:3px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        <!-- Claim the offer Section -->
+        <tr>
+            <td>
+                <div class="quote__block" style="margin-top: 40px;">
+                    <div class="head__quote" style="background-color:#F6F7F8;padding:0px 30px; padding-top: 20px;">
+                        <h6 style="margin:0px;font-size:18px;font-weight: bold;color:#000; ">Early Bird 2022 Tax Report
+                            15% Discount!
+                            <img class="size-change" style="float: right;     position: relative;
+                            bottom: 35px;"
+                                src="./Assets/PNG/Early Bird Discount Illustration.png" alt="ImageLoading">
+                        </h6>
+
+                    </div>
+                    <div class="quote__info" style="background-color:#F6F7F8;padding:15px 30px;padding-bottom: 30px;">
+                        <p
+                            style="margin-top: 0px;margin-bottom: 15px;font-size: 16px;font-weight: 401;color:#000;line-height: 26px;padding-bottom: 15px;">
+                            Want to get a jump-start on your tax reporting for the 2022 tax year?
+                            Good news! Weʼre running an early bird offer from now through April 18th
+                            for anyone who wants to unlock and pay for their 2022 tax reports. Simply use
+                            code “EARLYBIRD” at checkout for 15% off your 2022 report.</p>
+                        <p
+                            style="margin-top: 0px;margin-bottom: 15px;font-size: 16px;font-weight: 401;color:#000;line-height: 26px;padding-bottom: 15px;">
+                            Remember, once you unlock your tax reports with a purchase, you get
+                            unlimited edits to it! That means you can purchase today and track your tax
+                            liabilities through the remainder of the year.</p>
+                        <p
+                            style="margin-top: 0px;margin-bottom: 15px;font-size: 16px;font-weight: 401;color:#000;line-height: 26px;padding-bottom: 15px;">
+                            To purchase, just import your transactions to-date for 2022 and navigate to “2022 Tax
+                            Report” from the tax reports tab. Enter the coupon code, and you’re good to go!</p>
+                        <a href="https://app.coinledger.io/bff/login?action=signin" class="anker-blue" target="_blank"
+                            style="background-color: #539FFC;padding:10px 18px;border-radius: 5px;color:#fff;font-size:15px;font-weight: bold;text-decoration: none;">CLAIM
+                            THE OFFER NOW</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+
+
+
+        <!-- Twitter Follow and Meme Section -->
+        <tr>
+            <td>
+                <div class="meme__info" style="padding-left:30px;padding-right: 30px;padding-top:30px;">
+                    <h6 style="margin-top:0px;font-size:18px;color:#000;font-weight: 500;margin-bottom: 10px;">Crypto
+                        meme of the month</h6>
+                    <p style="font-size:16px;font-weight: 401;color:#000;margin-top: 0px;line-height: 22px;">Weʼve all
+                        been here… </p>
+                    <table style="width:100%;padding-top: 5px;">
+                        <tr>
+                            <td style="text-align: center;padding-bottom: 40px;">
+                                <a href="https://twitter.com/CoinLedger" class="anker-blue" target="_blank"
+                                    style="background-color: #539FFC;padding:10px 18px;border-radius: 5px;color:#fff;font-size:15px;font-weight: bold;text-decoration: none;"><img
+                                        src="./Assets/PNG/Twitter Icon.png" alt="Twitter_Logo1"
+                                        style="max-width: 24px;position: relative;top:5px;margin-right: 4px;">
+                                    FOLLOW</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;">
+                                <div class="meme__image">
+                                    <img src="./Assets/PNG/Meme.png" alt="meme" style="max-width:100%;">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
